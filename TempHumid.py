@@ -8,7 +8,7 @@ while True:
         h,t = dht.read_retry(dht.DHT22, 4)
         print 'Temp={0:0.1f}*C Humidity={1:0.1f}%'.format(t, h)
 
-        url="http://210.125.84.68:48080/api/v1/event"
+        url="http://xx.xx.xx.xx:48080/api/v1/event"
 
         payload = {"origin":1471806386919,"device":"thermostat","readings":[{"origin":1471806386919,"name":"temperature","value":t}, {"origin":1471806386919,"name":"humidity","value":h}]}
 
